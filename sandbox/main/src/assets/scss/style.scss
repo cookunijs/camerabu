@@ -1,0 +1,112 @@
+body {
+    font-size: 10px;
+    font-family: 'Lato', 'Noto Sans JP', '游ゴシック Medium', '游ゴシック体', 'Yu Gothic Medium', YuGothic, 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.title-nav {
+    margin: 24px auto;
+    width: 90%;
+    text-align: center;
+    &__logo {
+        display: block;
+        margin: 0 auto 16px;
+        width: 180px;
+    }
+    &__text {
+    
+    }
+}
+.wrapper {
+    margin: 0 auto;
+    max-width: 960px;
+    position: relative;
+}
+
+.add-button {
+    position: fixed;
+    right: 50%;
+    bottom: 24px;
+    transform: translateX(50%);
+    z-index: 100;
+    width: 44px;
+    height: 44px;
+    // background: #fff;
+    // border-radius: 22px;
+    // box-shadow: 0px 12px 24px hsl(0, 0%, 90%);
+    &__icon {
+        width: 56px;
+    }
+}
+
+.photo-contents {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.photo-card {
+    margin: 0 8px 16px 0;
+    width: 240px;
+    &__image {
+        width: 100%;
+        height: 260px;
+        object-fit: cover;
+    }
+    &__meta-text {
+        color: #222;
+        &--title {
+
+        }
+        &--value {
+
+        }
+
+    }
+}
+
+
+
+// 詳細ページ
+
+.back-button {
+    position: absolute;
+    left: 24px;
+    width: 44px;
+    &__icon {
+        width: 16px;
+    }
+}
+
+.photo-detail {
+    &__img {
+        display: block;
+        margin: 0 0 24px;
+        width: 100%;
+        max-height: 600px;
+        object-fit: contain;
+    }
+    &__text {
+        font-size: 1.4rem;
+        &__metadata {
+            margin: 0 auto;
+            &--title {
+                width: 240px;
+            }
+            &--value {
+                padding: 8px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:648px) {
+    .add-button {
+       display: none;
+    }
+}
